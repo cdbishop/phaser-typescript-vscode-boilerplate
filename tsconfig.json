@@ -1,7 +1,8 @@
 {
 	"compilerOptions": {
 		"target": "ES5",
-		"sourceMap": true
+		"sourceMap": true,
+		"outFile": "./bin/js/game.js"
 	},
 	"exclude": [
 		"node_modules",
