@@ -7,29 +7,26 @@
   
   "tasks": [
     {
-      //Build Task
       "taskName": "build",
-      //Run On Shift+Ctrl+B
       "isBuildCommand": true,
-      //Don't run when Shift+Ctrl+T
       "isTestCommand": false,
-      // Show the output window if error any
       "showOutput": "silent",
-      //Npm Task Name
       "args": [
-        "run", "compile:ts"
+        "run",
+        "compile"
+      ],
+      "problemMatcher": [
+        "$tsc"
       ]
     },
     {
-      //Test Task   
       "taskName": "install",
-      // Don't run on Shift+Ctrl+B
       "isBuildCommand": false,
-      // Run on Shift+Ctrl+T
       "isTestCommand": true,
       "showOutput": "always",
       "args": [
-        "run", "inst"
+        "run",
+        "inst"
       ]
     }
   ]
