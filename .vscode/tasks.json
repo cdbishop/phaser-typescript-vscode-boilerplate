@@ -28,6 +28,16 @@
         "run",
         "inst"
       ]
+    },
+    {
+      "taskName": "clean",
+      "isBuildCommand": false,
+      "isTestCommand": true,
+      "showOutput": "always",
+      "args": [
+        "run",
+        "clean"
+      ]
     }
   ]
 }
