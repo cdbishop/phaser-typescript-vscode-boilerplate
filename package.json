@@ -5,9 +5,12 @@
   "main": "",
   "repository": "",
   "scripts": {
-    "compile": "npm run compile:ts && npm run compile:assets",
+    "clean": "rm -rf ./bin",
+    "compile": "npm run compile:pre && npm run compile:phaser && npm run compile:ts && npm run compile:assets",
+    "compile:pre": "if not exist bin mkdir bin",
+    "compile:phaser": "cp -r ./phaser ./bin/js",
     "compile:ts": "tsc --outFile ./bin/js/game.js",
-    "compile:assets": "cp -r ./assets ./bin/assets",
+    "compile:assets": "cp -r ./assets ./bin/assets && cp -r ./src/index.html ./bin",
     "inst": "npm install"
   },
   "author": "Fatir Ahmad",
