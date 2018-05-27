@@ -5,7 +5,7 @@ module MyGame {
 		preload() {}
 
 		create() {
-			let logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'logo');
+			let logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'red_button');
 			logo.anchor.setTo(0.5, 0.5);
 		}
 
