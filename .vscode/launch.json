@@ -1,7 +1,21 @@
 {
 	"version": "0.1.0",
+	"compounds": [
+		{
+			"name": "Node+Browser",
+			"configurations": ["Launch Phaser Game", "Launch Chrome"]
+		}
+	],
 	// List of configurations. Add new configurations or edit existing ones.
 	"configurations": [
+		{
+			"type": "chrome",
+			"request": "launch",
+			"name": "Launch Chrome",
+			"url": "http://localhost:5858",
+			"webRoot": "${workspaceFolder}/bin",
+			"sourceMaps": true
+		},
 		{
 			// Name of configuration; appears in the launch configuration drop down menu.
 			"name": "Launch Phaser Game",
